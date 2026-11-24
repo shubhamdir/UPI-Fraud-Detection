@@ -2,7 +2,7 @@ import joblib
 import pickle
 from pathlib import Path
 
-folder = Path("models")
+folder = Path(__file__).resolve().parent / "models"
 
 files = [
     "xgboost_model.pkl",
@@ -20,11 +20,4 @@ for filename in files:
         obj = joblib.load(path)
         print("Joblib: SUCCESS")
     except Exception as e:
-        print("Joblib FAILED:", e)
-
-    try:
-        with open(path, "rb") as f:
-            obj = pickle.load(f)
-        print("Pickle: SUCCESS")
-    except Exception as e:
-        print("Pickle FAILED:", e)
+        print("Joblib: FAILED:", e)
