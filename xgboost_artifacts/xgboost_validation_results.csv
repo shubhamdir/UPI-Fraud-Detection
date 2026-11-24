@@ -1,0 +1,8 @@
+Metrics,Value
+Accuracy,0.9941875
+Precision,0.768
+Recall,0.6
+F1-Score,0.6736842105263158
+Average Precision,0.7032202791223049
+ROC-AUC,0.9761241319444444
+Selected Threshold,0.8747335076332092

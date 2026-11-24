@@ -1,0 +1,7 @@
+Metric,Value
+Accuracy,0.98425
+Precision,0.31451612903225806
+Recall,0.4875
+F1-score,0.38235294117647056
+Average Precision,0.3327371967733012
+Classification Threshold,0.9520998434772847
